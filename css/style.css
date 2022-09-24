@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --softBlue: #313E50;
+    --cyan: #6c6f7f86;
+    --veryDarkBlueMain: #CFD2CD;
+    --veryDarkBlueCard: #E5E6E4;
+    --veryDarkBlueLine: hsl(215, 32%, 27%);
+    --white: black;
+}
+
+body {
+    font-family: 'Outfit' , sans-serif;
+    background-color: var(--veryDarkBlueMain);
+}
+.logo {
+    display: block;
+    margin: 0 auto; 
+    width: 300px;
+}
+h1.main-title{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: var(--softBlue);
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+.main-container {
+    width: 300px;
+    height:546px;
+    margin: 40px auto;
+    border-radius: 16px;
+    padding: 26px;
+    background-color: var(--veryDarkBlueCard);
+}
+.image-one {
+    margin: 0 auto;
+    background-image: url(../images/cantaros.jpg);
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    border-radius: 8px;
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+.image-two {
+    margin: 0 auto;
+    background-image: url(../images/gaviota.jpg);
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    border-radius: 8px;
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+.image-three {
+    margin: 0 auto;
+    background-image: url(../images/lopez.jpg);
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    border-radius: 8px;
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+.eye-image {
+    opacity: 0;
+    background-color: var(--cyan);
+    background-image: url(../images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.eye-image:hover{
+    opacity: 1;
+    cursor: pointer;
+ }
+
+h1 {
+    color: var(--white);
+    font-size: 1.3em;
+    margin-bottom: 18px;
+}
+.description {
+    font-size: 0.9em;
+    color: var(--softBlue);
+    margin-bottom: 20px;
+    font-weight: 300px;
+}
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+.value {
+    color: var(--cyan);
+}
+.time {
+    color: var(--softBlue);
+}
+.color-img {
+    filter: invert(0%) sepia(0%) saturate(8%) hue-rotate(293deg) brightness(0%) contrast(0%);
+}
+
+.line {
+    border-top: 1px solid var(--softBlue);
+    margin-bottom: 15px;
+}
+.creator-container {
+    display: flex;
+    align-items: center;
+}
+.creator {
+    color: var(--softBlue);
+    margin-left: 15px;
+}
+.creator span {
+    color: var(--white);
+}
+.photo {
+    background-image: url(../images/image-avatar.png);
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    border-radius: 50px;
+}
+.title:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+/* FOOTER */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1200px) {
+    .flex-container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 89%;
+    }
+    .description {
+        font-size: 1em;
+    }
+}
